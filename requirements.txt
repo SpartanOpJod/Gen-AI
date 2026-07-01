@@ -1,0 +1,14 @@
+fastapi==0.95.2
+uvicorn[standard]==0.23.2
+pydantic==1.10.12
+loguru==0.7.0
+python-dotenv==1.0.0
+sentence-transformers==2.2.2
+PyMuPDF==1.22.5
+beautifulsoup4==4.12.2
+lancedb==0.4.0
+faiss-cpu==1.7.4
+pytest==7.4.0
+openai==1.5.0
+ranx==0.7.5
+requests==2.31.0
