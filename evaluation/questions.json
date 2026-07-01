@@ -1,0 +1,22 @@
+[
+  {"question": "What is retrieval-augmented generation?", "gold_answer": "Retrieval-augmented generation (RAG) combines retrieval of documents with LLM generation to ground answers.", "relevant_chunks": []},
+  {"question": "How does LanceDB compare to Pinecone?", "gold_answer": "LanceDB is an embedded vector DB with low infra cost; Pinecone is a managed vector DB with easier scaling and higher cost.", "relevant_chunks": []},
+  {"question": "What is chunking and why is overlap used?", "gold_answer": "Chunking splits documents into segments for retrieval; overlap preserves context across boundaries.", "relevant_chunks": []},
+  {"question": "Name a Python library to extract text from PDFs.", "gold_answer": "PyMuPDF (fitz) is commonly used to extract PDF text.", "relevant_chunks": []},
+  {"question": "What is SHA256 used for in ingestion pipelines?", "gold_answer": "To compute stable document content hashes for deduplication.", "relevant_chunks": []},
+  {"question": "Which model is used for embeddings in this project?", "gold_answer": "BAAI/bge-small-en-v1.5 is used as the embedding model.", "relevant_chunks": []},
+  {"question": "What does 'grounded generation' mean?", "gold_answer": "Generation that cites and uses retrieved context instead of hallucinating.", "relevant_chunks": []},
+  {"question": "When should you use a managed vector DB?", "gold_answer": "When you need production-scale indexing, global availability, and managed maintenance.", "relevant_chunks": []},
+  {"question": "What is FAISS used for?", "gold_answer": "FAISS is a library for efficient similarity search and clustering of dense vectors.", "relevant_chunks": []},
+  {"question": "Define Recall@k in retrieval evaluation.", "gold_answer": "Recall@k measures the fraction of relevant documents retrieved in the top-k results.", "relevant_chunks": []},
+  {"question": "What is MRR?", "gold_answer": "Mean Reciprocal Rank (MRR) averages the reciprocal rank of the first relevant result across queries.", "relevant_chunks": []},
+  {"question": "What metric measures ranking quality with position sensitivity?", "gold_answer": "nDCG (normalized Discounted Cumulative Gain) measures ranking quality accounting for position.", "relevant_chunks": []},
+  {"question": "How can token usage be logged for observability?", "gold_answer": "Record prompt, completion, and total tokens from LLM responses and save to logs.", "relevant_chunks": []},
+  {"question": "Why avoid hardcoding API keys?", "gold_answer": "To reduce secret leakage and allow secure rotation via environment variables.", "relevant_chunks": []},
+  {"question": "What is Cohen's Kappa used for?", "gold_answer": "Cohen's Kappa measures inter-annotator agreement accounting for chance.", "relevant_chunks": []},
+  {"question": "What is position bias in pairwise judging?", "gold_answer": "A preference for the first or second item solely due to ordering, not quality.", "relevant_chunks": []},
+  {"question": "What is the flip rate in bias experiments?", "gold_answer": "The fraction of judgments that change when item order is reversed.", "relevant_chunks": []},
+  {"question": "Name a method to reduce verbosity bias.", "gold_answer": "Use calibration anchors and penalize unsupported verbosity in the rubric.", "relevant_chunks": []},
+  {"question": "What is RAGAS used for?", "gold_answer": "RAGAS is a toolkit for evaluating generated answers, including faithfulness and relevancy.", "relevant_chunks": []},
+  {"question": "Why is reranking useful after retrieval?", "gold_answer": "Reranking refines results using stronger similarity measures or cross-encoders for better precision.", "relevant_chunks": []}
+]
