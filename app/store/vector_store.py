@@ -19,8 +19,13 @@ class VectorStoreManager:
         self.table = None
         if lancedb is not None:
             self.client = lancedb.connect(str(self.path))
-            tables = self.client.list_tables()
+            try:
+                tables = self.client.list_tables()
+            except AttributeError:
+                tables = getattr(self.client, "table_names", lambda: [])()
             self.table = self.client.table(self.table_name) if self.table_name in tables else None
+            if self.table is None and self.table_name in tables:
+                self.table = self.client.open_table(self.table_name)
 
     def create_table(self) -> Any:
         if lancedb is None:

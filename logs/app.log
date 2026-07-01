@@ -1,0 +1,4 @@
+2026-07-01 17:12:07.328 | WARNING  | app.embeddings.encoder:__init__:16 - sentence-transformers not available; using zero vectors
+2026-07-01 17:13:29.219 | WARNING  | app.embeddings.encoder:__init__:16 - sentence-transformers not available; using zero vectors
+2026-07-01 17:13:29.221 | WARNING  | app.embeddings.encoder:__init__:16 - sentence-transformers not available; using zero vectors
+2026-07-01 17:13:29.237 | WARNING  | app.embeddings.encoder:__init__:16 - sentence-transformers not available; using zero vectors

@@ -3,7 +3,6 @@ import time
 
 from fastapi import FastAPI, HTTPException
 
-from app.core.config import settings
 from app.core.logging import logger
 from app.embeddings.encoder import EmbeddingModel
 from app.ingest.ingestor import ingest_path
@@ -37,7 +36,7 @@ def ingest(req: IngestRequest) -> dict[str, Any]:
 
 @app.post("/ask", response_model=AskResponse)
 def ask(req: AskRequest) -> AskResponse:
-    start = time.time()
+    start = time.perf_counter()
     query_vector = embedder.embed_texts([req.question])[0]
     hits = vstore.similarity_search(query_vector, k=req.k, filter=req.filter)
     contexts = []
@@ -46,8 +45,16 @@ def ask(req: AskRequest) -> AskResponse:
             contexts.append(hit)
     reranked = rerank_by_cosine(query_vector, contexts) if contexts else contexts
     answer = llm.generate(req.question, reranked)
-    latency_ms = int((time.time() - start) * 1000)
-    return AskResponse(answer=answer.get("answer", ""), citations=answer.get("citations", []), latency_ms=latency_ms)
+    retrieval_latency_ms = int((time.perf_counter() - start) * 1000)
+    retrieved_chunks = [c.get("chunk_id") for c in reranked if isinstance(c, dict)]
+    logger.info(
+        "query question={} retrieval_latency_ms={} retrieved_chunks={} token_usage={}",
+        req.question,
+        retrieval_latency_ms,
+        retrieved_chunks,
+        answer.get("token_usage", {}),
+    )
+    return AskResponse(answer=answer.get("answer", ""), citations=answer.get("citations", []), latency_ms=retrieval_latency_ms)
 
 
 @app.get("/documents")

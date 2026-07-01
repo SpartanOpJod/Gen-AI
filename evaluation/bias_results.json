@@ -1,0 +1,21 @@
+{
+  "position_bias": {
+    "flip_rate": 0.5,
+    "average_score": 4
+  },
+  "verbosity_bias": {
+    "flip_rate": 0.5
+  },
+  "self_enhancement": {
+    "generator_family": "GPT",
+    "judge_family": "Gemini",
+    "mitigation_active": true
+  },
+  "sycophancy": {
+    "sycophancy_rate": 0.5
+  },
+  "anchor_calibration": {
+    "anchor_mean": 3.5,
+    "clustered": true
+  }
+}

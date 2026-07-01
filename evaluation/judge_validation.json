@@ -1,1 +1,12 @@
-{"agreement": {}, "flip_rate": {}, "consistency": {}}
+{
+  "agreement": {
+    "agreement_rate": 1.0,
+    "cohen_kappa": 1.0
+  },
+  "consistency": {
+    "stability": 1.0
+  },
+  "adversarial": {
+    "adversarial_failure_rate": 0.5
+  }
+}

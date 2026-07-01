@@ -1,1 +1,622 @@
-{}
+[
+  {
+    "question": "What is retrieval-augmented generation?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 4,
+      "completion_tokens": 2,
+      "total_tokens": 6
+    }
+  },
+  {
+    "question": "How does LanceDB compare to Pinecone?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 6,
+      "completion_tokens": 3,
+      "total_tokens": 9
+    }
+  },
+  {
+    "question": "What is chunking and why is overlap used?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 4,
+      "total_tokens": 12
+    }
+  },
+  {
+    "question": "Name a Python library to extract text from PDFs.",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 4,
+      "total_tokens": 13
+    }
+  },
+  {
+    "question": "What is SHA256 used for in ingestion pipelines?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 4,
+      "total_tokens": 12
+    }
+  },
+  {
+    "question": "Which model is used for embeddings in this project?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.143,
+      "answer_relevancy": 0.1,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 4,
+      "total_tokens": 13
+    }
+  },
+  {
+    "question": "What does 'grounded generation' mean?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 2,
+      "total_tokens": 7
+    }
+  },
+  {
+    "question": "When should you use a managed vector DB?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 4,
+      "total_tokens": 12
+    }
+  },
+  {
+    "question": "What is FAISS used for?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 2,
+      "total_tokens": 7
+    }
+  },
+  {
+    "question": "Define Recall@k in retrieval evaluation.",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.273,
+      "answer_relevancy": 0.3,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 2,
+      "total_tokens": 7
+    }
+  },
+  {
+    "question": "What is MRR?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.167,
+      "answer_relevancy": 0.2,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 3,
+      "completion_tokens": 1,
+      "total_tokens": 4
+    }
+  },
+  {
+    "question": "What metric measures ranking quality with position sensitivity?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 4,
+      "total_tokens": 12
+    }
+  },
+  {
+    "question": "How can token usage be logged for observability?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 4,
+      "total_tokens": 12
+    }
+  },
+  {
+    "question": "Why avoid hardcoding API keys?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 2,
+      "total_tokens": 7
+    }
+  },
+  {
+    "question": "What is Cohen's Kappa used for?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 6,
+      "completion_tokens": 3,
+      "total_tokens": 9
+    }
+  },
+  {
+    "question": "What is position bias in pairwise judging?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.143,
+      "answer_relevancy": 0.2,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 7,
+      "completion_tokens": 3,
+      "total_tokens": 10
+    }
+  },
+  {
+    "question": "What is the flip rate in bias experiments?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.091,
+      "answer_relevancy": 0.1,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 4,
+      "total_tokens": 12
+    }
+  },
+  {
+    "question": "Name a method to reduce verbosity bias.",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.2,
+      "answer_relevancy": 0.2,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 7,
+      "completion_tokens": 3,
+      "total_tokens": 10
+    }
+  },
+  {
+    "question": "What is RAGAS used for?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 2,
+      "total_tokens": 7
+    }
+  },
+  {
+    "question": "Why is reranking useful after retrieval?",
+    "answer": "I could not find relevant information in the supplied documents.",
+    "judge": {
+      "correctness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "faithfulness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "completeness": {
+        "score": 1,
+        "rationale": "Simple lexical overlap heuristic."
+      },
+      "overall_score": 1
+    },
+    "ragas": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "citations": [],
+    "token_usage": {
+      "prompt_tokens": 6,
+      "completion_tokens": 3,
+      "total_tokens": 9
+    }
+  }
+]

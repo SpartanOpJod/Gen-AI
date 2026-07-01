@@ -16,6 +16,11 @@ class BaseLLM(ABC):
         raise NotImplementedError
 
 
+def _token_usage(text: str) -> Dict[str, int]:
+    tokens = len(text.split())
+    return {"prompt_tokens": tokens, "completion_tokens": max(1, tokens // 2), "total_tokens": tokens + max(1, tokens // 2)}
+
+
 class OpenAILLM(BaseLLM):
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or settings.openai_api_key
@@ -24,18 +29,17 @@ class OpenAILLM(BaseLLM):
 
     def generate(self, prompt: str, context: List[str]) -> Dict[str, Any]:
         if openai is None or not self.api_key:
-            return {"answer": "OpenAI API not configured", "citations": []}
-        # Placeholder; safe fallback
-        return {"answer": f"OpenAI placeholder response to: {prompt}", "citations": []}
+            return {"answer": "OpenAI API not configured", "citations": [], "token_usage": _token_usage(prompt)}
+        return {"answer": f"OpenAI placeholder response to: {prompt}", "citations": [], "token_usage": _token_usage(prompt)}
 
 
 class GeminiLLM(BaseLLM):
     def generate(self, prompt: str, context: List[str]) -> Dict[str, Any]:
-        return {"answer": f"Gemini placeholder response to: {prompt}", "citations": []}
+        return {"answer": f"Gemini placeholder response to: {prompt}", "citations": [], "token_usage": _token_usage(prompt)}
 
 
 class DummyLLM(BaseLLM):
     def generate(self, prompt: str, context: List[str]) -> Dict[str, Any]:
         if not context:
-            return {"answer": "I could not find relevant information in the supplied documents.", "citations": []}
-        return {"answer": f"Grounded answer using {len(context)} chunks", "citations": [c.get("chunk_id") for c in context if isinstance(c, dict)]}
+            return {"answer": "I could not find relevant information in the supplied documents.", "citations": [], "token_usage": _token_usage(prompt)}
+        return {"answer": f"Grounded answer using {len(context)} chunks", "citations": [c.get("chunk_id") for c in context if isinstance(c, dict)], "token_usage": _token_usage(prompt)}

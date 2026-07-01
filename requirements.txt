@@ -10,5 +10,5 @@ lancedb==0.4.0
 faiss-cpu==1.7.4
 pytest==7.4.0
 openai==1.5.0
-ranx==0.7.5
+ranx==0.3.21
 requests==2.31.0
