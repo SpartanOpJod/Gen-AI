@@ -1,6 +1,8 @@
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import pyarrow as pa
+
 from app.core.config import settings
 from app.core.logging import logger
 
@@ -31,7 +33,20 @@ class VectorStoreManager:
         if lancedb is None:
             raise RuntimeError("lancedb is not installed")
         if self.table is None:
-            self.table = self.client.create_table(self.table_name)
+            schema = pa.schema([
+                ("id", pa.string()),
+                ("source", pa.string()),
+                ("document_type", pa.string()),
+                ("page_number", pa.int64()),
+                ("chunk_id", pa.string()),
+                ("doc_hash", pa.string()),
+                ("ingestion_timestamp", pa.string()),
+                ("text", pa.string()),
+                ("embedding", pa.list_(pa.float32())),
+                ("embedding_model", pa.string()),
+                ("embedding_dim", pa.int64()),
+            ])
+            self.table = self.client.create_table(self.table_name, schema=schema)
         return self.table
 
     def upsert_documents(self, documents: List[Dict[str, Any]], embeddings: List[List[float]]) -> None:
