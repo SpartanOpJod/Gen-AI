@@ -25,9 +25,11 @@ class VectorStoreManager:
                 tables = self.client.list_tables()
             except AttributeError:
                 tables = getattr(self.client, "table_names", lambda: [])()
-            self.table = self.client.table(self.table_name) if self.table_name in tables else None
-            if self.table is None and self.table_name in tables:
-                self.table = self.client.open_table(self.table_name)
+            if self.table_name in tables:
+                try:
+                    self.table = self.client.table(self.table_name)
+                except AttributeError:
+                    self.table = self.client.open_table(self.table_name)
 
     def create_table(self) -> Any:
         if lancedb is None:
@@ -65,7 +67,7 @@ class VectorStoreManager:
             records.append({**meta, "text": doc["text"], "embedding": emb, "embedding_model": settings.embedding_model, "embedding_dim": settings.embedding_dim})
 
         if records:
-            self.table.upsert(records)
+            self.table.add(records)
             logger.info("Upserted {} documents", len(records))
 
     def similarity_search(self, vector: List[float], k: int = 5, filter: Optional[Dict[str, Any]] = None):
@@ -75,7 +77,7 @@ class VectorStoreManager:
         if filter:
             for key, value in filter.items():
                 q = q.filter(f"{key} == '{value}'")
-        return q.execute()
+        return getattr(q, "_execute_query", q.execute)()
 
     def metadata_filter_search(self, filter: Dict[str, Any], k: int = 10):
         if self.table is None:
@@ -83,7 +85,7 @@ class VectorStoreManager:
         q = self.table.search().limit(k)
         for key, value in filter.items():
             q = q.filter(f"{key} == '{value}'")
-        return q.execute()
+        return getattr(q, "_execute_query", q.execute)()
 
     def delete_document(self, doc_id: str) -> bool:
         if self.table is None:

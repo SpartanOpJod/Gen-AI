@@ -8,3 +8,8 @@
 2026-07-01 17:19:58.770 | WARNING  | app.evaluation.judge:llm_as_judge:51 - Judge parsing failed
 2026-07-01 17:20:35.985 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
 2026-07-01 17:22:07.947 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 17:27:21.939 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 17:28:54.016 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 17:28:54.264 | INFO     | app.store.vector_store:upsert_documents:71 - Upserted 3 documents
+2026-07-01 17:32:50.147 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 17:32:50.465 | INFO     | app.store.vector_store:upsert_documents:71 - Upserted 3 documents
