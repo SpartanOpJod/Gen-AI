@@ -65,20 +65,16 @@ class VectorStoreManager:
             meta = doc["metadata"]
             if meta.get("doc_hash") in existing_hashes:
                 continue
-            records.append({**meta, "text": doc["text"], "embedding": emb, "embedding_model": settings.embedding_model, "embedding_dim": settings.embedding_dim})
+            record = {**meta, "text": doc["text"], "embedding": emb, "embedding_model": settings.embedding_model, "embedding_dim": settings.embedding_dim}
+            records.append(record)
 
         if records:
+            self._documents.extend(records)
             if self.table is not None:
-                self.table.add(records)
-            else:
-                self._documents.extend([
-                    {
-                        **record,
-                        "embedding_model": settings.embedding_model,
-                        "embedding_dim": settings.embedding_dim,
-                    }
-                    for record in records
-                ])
+                try:
+                    self.table.add(records)
+                except Exception as exc:
+                    logger.warning("LanceDB add failed, continuing with in-memory fallback: {}", exc)
             logger.info("Upserted {} documents", len(records))
 
     def similarity_search(self, vector: List[float], k: int = 5, filter: Optional[Dict[str, Any]] = None):

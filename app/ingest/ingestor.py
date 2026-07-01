@@ -75,14 +75,15 @@ def ingest_path(path: str, chunk_size: Optional[int] = None, overlap: Optional[i
                 text = page.get("text", "")
                 doc_hash = sha256_text(text)
                 for idx, chunk in enumerate(chunk_text(text, cs, ov)):
+                    chunk_id = f"{f.stem}-{idx}"
                     docs.append({
                         "text": chunk,
                         "metadata": {
-                            "id": f"{f.stem}-{page.get('page_number')}-{idx}",
+                            "id": chunk_id,
                             "source": str(f.resolve()),
                             "document_type": doc_type,
                             "page_number": page.get("page_number"),
-                            "chunk_id": f"{f.stem}-{page.get('page_number')}-{idx}",
+                            "chunk_id": chunk_id,
                             "doc_hash": doc_hash,
                             "ingestion_timestamp": datetime.utcnow().isoformat(),
                         },

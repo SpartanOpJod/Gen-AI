@@ -1,251 +1,331 @@
 {
   "summary": {
-    "recall_at_k": 0.0,
-    "hit_rate": 0.0,
-    "mrr": 0.0,
-    "ndcg_at_k": 0.0,
-    "context_precision": 0.0
+    "recall_at_k": 1.0,
+    "hit_rate": 1.0,
+    "mrr": 0.442,
+    "ndcg_at_k": 0.584,
+    "context_precision": 0.2
   },
   "per_query": [
     {
       "question": "What is retrieval-augmented generation?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "vector_db-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "How does LanceDB compare to Pinecone?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "rag_basics-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "vector_db-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "What is chunking and why is overlap used?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "rag_basics-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "Name a Python library to extract text from PDFs.",
-      "hits": [],
+      "hits": [
+        "rag_basics-0",
+        "judge_bias-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "context_precision": 0.2
     },
     {
       "question": "What is SHA256 used for in ingestion pipelines?",
-      "hits": [],
+      "hits": [
+        "vector_db-0",
+        "judge_bias-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "Which model is used for embeddings in this project?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "vector_db-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "What does 'grounded generation' mean?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "rag_basics-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "When should you use a managed vector DB?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "vector_db-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "vector_db-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "What is FAISS used for?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "rag_basics-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "Define Recall@k in retrieval evaluation.",
-      "hits": [],
+      "hits": [
+        "vector_db-0",
+        "judge_bias-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "What is MRR?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "rag_basics-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "What metric measures ranking quality with position sensitivity?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "rag_basics-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "How can token usage be logged for observability?",
-      "hits": [],
+      "hits": [
+        "vector_db-0",
+        "judge_bias-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "Why avoid hardcoding API keys?",
-      "hits": [],
+      "hits": [
+        "vector_db-0",
+        "judge_bias-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "What is Cohen's Kappa used for?",
-      "hits": [],
+      "hits": [
+        "vector_db-0",
+        "judge_bias-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "What is position bias in pairwise judging?",
-      "hits": [],
+      "hits": [
+        "vector_db-0",
+        "judge_bias-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "judge_bias-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "What is the flip rate in bias experiments?",
-      "hits": [],
+      "hits": [
+        "rag_basics-0",
+        "judge_bias-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "judge_bias-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "Name a method to reduce verbosity bias.",
-      "hits": [],
+      "hits": [
+        "rag_basics-0",
+        "judge_bias-0",
+        "vector_db-0"
+      ],
       "relevant_chunks": [
         "judge_bias-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_k": 0.631,
+      "context_precision": 0.2
     },
     {
       "question": "What is RAGAS used for?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "vector_db-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     },
     {
       "question": "Why is reranking useful after retrieval?",
-      "hits": [],
+      "hits": [
+        "judge_bias-0",
+        "vector_db-0",
+        "rag_basics-0"
+      ],
       "relevant_chunks": [
         "rag_basics-0"
       ],
-      "recall_at_k": 0.0,
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "ndcg_at_k": 0.0,
-      "context_precision": 0.0
+      "recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.5,
+      "context_precision": 0.2
     }
   ]
 }

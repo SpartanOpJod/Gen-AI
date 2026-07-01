@@ -128,3 +128,53 @@
 2026-07-01 17:54:54.690 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
 2026-07-01 17:54:54.935 | INFO     | app.store.vector_store:upsert_documents:82 - Upserted 3 documents
 2026-07-01 17:54:54.939 | WARNING  | app.store.vector_store:similarity_search:93 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:03:22.291 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 18:03:22.519 | INFO     | app.store.vector_store:upsert_documents:78 - Upserted 3 documents
+2026-07-01 18:03:22.523 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:05:31.652 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 18:05:31.878 | INFO     | app.store.vector_store:upsert_documents:78 - Upserted 3 documents
+2026-07-01 18:05:31.882 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.195 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 18:06:19.434 | INFO     | app.store.vector_store:upsert_documents:78 - Upserted 3 documents
+2026-07-01 18:06:19.438 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.440 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.442 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.445 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.446 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.449 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.451 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.453 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.454 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.457 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.459 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.461 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.464 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.465 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.468 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.469 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.471 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.474 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.475 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:06:19.478 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.034 | WARNING  | app.embeddings.encoder:__init__:17 - sentence-transformers not available; using deterministic fallback embeddings
+2026-07-01 18:07:45.283 | INFO     | app.store.vector_store:upsert_documents:78 - Upserted 3 documents
+2026-07-01 18:07:45.287 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.289 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.292 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.294 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.296 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.298 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.300 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.302 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.305 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.307 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.309 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.311 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.313 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.316 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.318 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.320 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.322 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.323 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.326 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
+2026-07-01 18:07:45.328 | WARNING  | app.store.vector_store:similarity_search:89 - Falling back to in-memory search because LanceDB query failed: Query column embedding must be a vector. Got list<item: float>.
