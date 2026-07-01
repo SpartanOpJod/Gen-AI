@@ -19,6 +19,7 @@ class VectorStoreManager:
         self.path.mkdir(parents=True, exist_ok=True)
         self.client = None
         self.table = None
+        self._documents: List[Dict[str, Any]] = []
         if lancedb is not None:
             self.client = lancedb.connect(str(self.path))
             try:
@@ -67,25 +68,61 @@ class VectorStoreManager:
             records.append({**meta, "text": doc["text"], "embedding": emb, "embedding_model": settings.embedding_model, "embedding_dim": settings.embedding_dim})
 
         if records:
-            self.table.add(records)
+            if self.table is not None:
+                self.table.add(records)
+            else:
+                self._documents.extend([
+                    {
+                        **record,
+                        "embedding_model": settings.embedding_model,
+                        "embedding_dim": settings.embedding_dim,
+                    }
+                    for record in records
+                ])
             logger.info("Upserted {} documents", len(records))
 
     def similarity_search(self, vector: List[float], k: int = 5, filter: Optional[Dict[str, Any]] = None):
-        if self.table is None:
-            return []
-        q = self.table.search(vector).limit(k)
+        if self.table is not None:
+            try:
+                q = self.table.search(vector, vector_column_name="embedding").limit(k)
+                if filter:
+                    for key, value in filter.items():
+                        q = q.where(f"{key} == '{value}'")
+                return q.to_list()
+            except Exception as exc:
+                logger.warning("Falling back to in-memory search because LanceDB query failed: {}", exc)
+
+        docs = self._documents
         if filter:
-            for key, value in filter.items():
-                q = q.filter(f"{key} == '{value}'")
-        return getattr(q, "_execute_query", q.execute)()
+            docs = [doc for doc in docs if all(doc.get(key) == value for key, value in filter.items())]
+
+        if not docs:
+            return []
+
+        def cosine_similarity(a: List[float], b: List[float]) -> float:
+            if not a or not b:
+                return 0.0
+            dot = sum(x * y for x, y in zip(a, b))
+            norm_a = sum(x * x for x in a) ** 0.5
+            norm_b = sum(y * y for y in b) ** 0.5
+            if norm_a == 0 or norm_b == 0:
+                return 0.0
+            return dot / (norm_a * norm_b)
+
+        scored = []
+        for doc in docs:
+            emb = doc.get("embedding") or []
+            scored.append((cosine_similarity(vector, emb), doc))
+        scored.sort(key=lambda item: item[0], reverse=True)
+        return [doc for _, doc in scored[:k]]
 
     def metadata_filter_search(self, filter: Dict[str, Any], k: int = 10):
         if self.table is None:
             return []
         q = self.table.search().limit(k)
         for key, value in filter.items():
-            q = q.filter(f"{key} == '{value}'")
-        return getattr(q, "_execute_query", q.execute)()
+            q = q.where(f"{key} == '{value}'")
+        return q.to_list()
 
     def delete_document(self, doc_id: str) -> bool:
         if self.table is None:
